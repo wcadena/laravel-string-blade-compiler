@@ -1,5 +1,5 @@
 <?php
-namespace Bilaliqbalr\StringBladeCompiler;
+namespace Wcadena\StringBladeCompiler;
 
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\ServiceProvider;
@@ -53,7 +53,7 @@ class StringBladeCompilerServiceProvider extends ServiceProvider
         $this->app->booting(function () {
             Log::info('Entroa aca!!!!!');
             $loader = \Illuminate\Foundation\AliasLoader::getInstance();
-            $loader->alias('StringView', 'Bilaliqbalr\StringBladeCompiler\Facades\StringView');
+            $loader->alias('StringView', 'Wcadena\StringBladeCompiler\Facades\StringView');
         });
     }
 

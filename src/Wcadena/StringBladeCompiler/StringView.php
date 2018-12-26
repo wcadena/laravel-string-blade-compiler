@@ -1,5 +1,5 @@
 <?php
-namespace Bilaliqbalr\StringBladeCompiler;
+namespace Wcadena\StringBladeCompiler;
 
 use Illuminate\Support\Facades\Log;
 use View;

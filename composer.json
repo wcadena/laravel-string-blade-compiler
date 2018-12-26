@@ -1,5 +1,5 @@
 {
-    "name": "wcadena/laravel-string-blade-compiler",
+    "name": "wcadena/string-blade-compiler",
     "description": "Render Blade templates from a string",
     "keywords": ["laravel", "blade", "compiler", "eloquent", "model"],
     "license": "MIT",
@@ -33,13 +33,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Bilaliqbalr\\StringBladeCompiler\\": "src/"
+            "Wcadena\\StringBladeCompiler\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Bilaliqbalr\\StringBladeCompiler\\StringBladeCompilerServiceProvider"
+                "Wcadena\\StringBladeCompiler\\StringBladeCompilerServiceProvider"
             ]
         }
     }
