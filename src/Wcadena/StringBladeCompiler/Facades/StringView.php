@@ -14,7 +14,7 @@ class StringView extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        Log::info('datoasdasd88asd8asd');
+        //Log::info('datoasdasd88asd8asd');
         return 'StringView';
     }
 }
