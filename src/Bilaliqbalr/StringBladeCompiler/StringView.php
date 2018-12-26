@@ -43,10 +43,10 @@ class StringView extends \Illuminate\View\View implements ArrayAccess, Renderabl
     /**
      * Get the string contents of the view.
      *
-     * @param  \Closure  $callback
+     * @param  $callback  $callback
      * @return string
      */
-    public function render(Closure $callback = null)
+    public function (callable $callback = null)
     {
         $contents = $this->renderContents();
 
