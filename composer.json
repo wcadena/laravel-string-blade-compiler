@@ -21,6 +21,11 @@
             "name": "Ebrahim Radi",
             "email": "ebrahim.radi@gmail.com",
             "homepage": "http://me2bits.com"
+        },
+        {
+            "name": "Wagner Cadena",
+            "email": "wcadena@outlook.com",
+            "homepage": "http://ecuatask.com"
         }
     ],
     "require": {
