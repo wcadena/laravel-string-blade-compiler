@@ -1,5 +1,5 @@
 <?php
-namespace Bilaliqbalr\StringBladeCompiler;
+namespace Bilaliqbalr_new\StringBladeCompiler;
 
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\ServiceProvider;
@@ -41,7 +41,7 @@ class StringBladeCompilerServiceProvider extends ServiceProvider
         $config_path = __DIR__ . '/../../../config/string-blade-compiler.php';
         $this->mergeConfigFrom($config_path, 'string-blade-compiler');
 
-        $this->app->singleton('stringview', function ($app) {
+        $this->app->singleton('StringView', function ($app) {
             $cache_path = storage_path('app/string-blade-compiler/views');
 
             $string_view = new StringView($app['config']);
@@ -53,7 +53,7 @@ class StringBladeCompilerServiceProvider extends ServiceProvider
         $this->app->booting(function () {
             Log::info('Entroa aca!!!!!');
             $loader = \Illuminate\Foundation\AliasLoader::getInstance();
-            $loader->alias('StringView', 'Bilaliqbalr\StringBladeCompiler\Facades\StringView');
+            $loader->alias('StringView', 'Bilaliqbalr_new\StringBladeCompiler\Facades\StringView');
         });
     }
 

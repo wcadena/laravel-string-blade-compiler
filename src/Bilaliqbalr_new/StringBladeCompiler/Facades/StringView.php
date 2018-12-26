@@ -1,5 +1,5 @@
 <?php
-namespace Bilaliqbalr\StringBladeCompiler\Facades;
+namespace Bilaliqbalr_new\StringBladeCompiler\Facades;
 
 use Illuminate\Support\Facades\Facade;
 use Illuminate\Support\Facades\Log;
@@ -15,6 +15,6 @@ class StringView extends Facade
     protected static function getFacadeAccessor()
     {
         Log::info('datoasdasd88asd8asd');
-        return 'stringview';
+        return 'StringView';
     }
 }

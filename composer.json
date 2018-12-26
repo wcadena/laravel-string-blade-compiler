@@ -29,18 +29,8 @@
     },
     "autoload": {
         "psr-4": {
-            "Bilaliqbalr\\StringBladeCompiler\\": "src/"
+            "Bilaliqbalr_new\\StringBladeCompiler\\": "src/"
         }
     },
-    "minimum-stability": "dev",
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Bilaliqbalr\\StringBladeCompiler\\StringBladeCompilerServiceProvider"
-            ],
-            "aliases": {
-                "StringView": "Bilaliqbalr\\StringBladeCompiler\\Facades\\StringView"
-            }
-        }
-    }
+    "minimum-stability": "dev"
 }
