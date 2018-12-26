@@ -1,6 +1,7 @@
 <?php
 namespace Bilaliqbalr\StringBladeCompiler;
 
+use Illuminate\Support\Facades\Log;
 use Illuminate\View\Compilers\BladeCompiler;
 use Illuminate\View\Compilers\CompilerInterface;
 
@@ -12,6 +13,7 @@ class StringBladeCompiler extends BladeCompiler implements CompilerInterface
 
     public function __construct($filesystem, $cache_path, $config, $app)
     {
+        Log::info('asdy7nascascascasc');
         // Get Current Blade Instance
         $blade = app('view')->getEngineResolver()->resolve('blade')->getCompiler();
 
@@ -32,6 +34,7 @@ class StringBladeCompiler extends BladeCompiler implements CompilerInterface
      */
     public function compile($path = NULL)
     {
+        Log::info('asdy7nascascascasc222222222222222');
         $contents = $this->compileString($path);
 
         if (!is_null($this->cachePath)) {
@@ -47,6 +50,7 @@ class StringBladeCompiler extends BladeCompiler implements CompilerInterface
      */
     public function getCompiledPath($path)
     {
+        Log::info('asdy7nascascascasc33333333333333');
         /*
          * A unique path for the given model instance must be generated
          * so the view has a place to cache. The following generates a
@@ -65,6 +69,7 @@ class StringBladeCompiler extends BladeCompiler implements CompilerInterface
      */
     public function isExpired($path)
     {
+        Log::info('asdy7nascascascascsasda22222222222222222');
         if (!$this->config->get('string-blade-compiler.cache') OR !$this->config->get('string-blade-compiler.cache_time') OR !is_int($this->config->get('string-blade-compiler.cache_time'))) {
             return true;
         }
