@@ -32,5 +32,16 @@
             "Bilaliqbalr_new\\StringBladeCompiler\\": "src/"
         }
     },
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bilaliqbalr_new\\StringBladeCompiler\\StringBladeCompilerServiceProvider"
+            ],
+            "aliases": {
+                "StringView": "Bilaliqbalr_new\\StringBladeCompiler\\Facades\\StringView"
+            }
+        }
+    }
     "minimum-stability": "dev"
 }
