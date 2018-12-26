@@ -1,5 +1,5 @@
 <?php
-namespace Bilaliqbalr_new\StringBladeCompiler\Facades;
+namespace Bilaliqbalr\StringBladeCompiler\Facades;
 
 use Illuminate\Support\Facades\Facade;
 use Illuminate\Support\Facades\Log;

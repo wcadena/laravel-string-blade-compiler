@@ -29,17 +29,17 @@
     },
     "autoload": {
         "psr-4": {
-            "Bilaliqbalr_new\\StringBladeCompiler\\": "src/"
+            "Bilaliqbalr\\StringBladeCompiler\\": "src/"
         }
     },
     "minimum-stability": "dev",
     "extra": {
         "laravel": {
             "providers": [
-                "Bilaliqbalr_new\\StringBladeCompiler\\StringBladeCompilerServiceProvider"
+                "Bilaliqbalr\\StringBladeCompiler\\StringBladeCompilerServiceProvider"
             ],
             "aliases": {
-                "StringView": "Bilaliqbalr_new\\StringBladeCompiler\\Facades\\StringView"
+                "StringView": "Bilaliqbalr\\StringBladeCompiler\\Facades\\StringView"
             }
         }
     }
