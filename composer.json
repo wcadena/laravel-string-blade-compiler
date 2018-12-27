@@ -8,7 +8,6 @@
             "email": "wcadena@outlook.com"
         }
     ],
-    "minimum-stability": "dev",
     "require": {
         "php": ">=7"
     },

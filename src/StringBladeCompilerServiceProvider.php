@@ -21,10 +21,10 @@ class StringBladeCompilerServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $config_path = __DIR__ . '/../../../config/string-blade-compiler.php';
+        $config_path = __DIR__ . '/config/string-blade-compiler.php';
         $this->publishes([$config_path => config_path('string-blade-compiler.php')], 'config');
 
-        $views_path = __DIR__ . '/../../../config/.gitkeep';
+        $views_path = __DIR__ . '/config/.gitkeep';
         $this->publishes([$views_path => storage_path('app/string-blade-compiler/views/.gitkeep')]);
     }
 
@@ -35,7 +35,7 @@ class StringBladeCompilerServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $config_path = __DIR__ . '/../../../config/string-blade-compiler.php';
+        $config_path = __DIR__ . '/config/string-blade-compiler.php';
         $this->mergeConfigFrom($config_path, 'string-blade-compiler');
 
         $this->app->singleton('StringView', function ($app) {
