@@ -1,7 +1,6 @@
 <?php
 namespace Wcadena\StringBladeCompiler;
 
-use Illuminate\Support\Facades\Log;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\View\Engines\CompilerEngine;
 
@@ -22,7 +21,6 @@ class StringBladeCompilerServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //Log::info('Entroa aca3333333333333333333333333333333333!!!!!');
         $config_path = __DIR__ . '/../../../config/string-blade-compiler.php';
         $this->publishes([$config_path => config_path('string-blade-compiler.php')], 'config');
 
@@ -37,7 +35,6 @@ class StringBladeCompilerServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //Log::info('Entroa aca1111111111111111111!!!!!');
         $config_path = __DIR__ . '/../../../config/string-blade-compiler.php';
         $this->mergeConfigFrom($config_path, 'string-blade-compiler');
 
@@ -64,7 +61,6 @@ class StringBladeCompilerServiceProvider extends ServiceProvider
      */
     public function provides()
     {
-        //Log::info('hahahahahahaha11111111111111111');
         return array();
     }
 }

@@ -1,6 +1,8 @@
 ## String Blade Compiler
 
 Originally forked from [Flynsarmy/laravel-db-blade-compiler](https://github.com/Flynsarmy/laravel-db-blade-compiler)
+y 
+Originally forked from [bilaliqbalr/laravel-string-blade-compiler](https://github.com/bilaliqbalr/laravel-string-blade-compiler)
 
 ### Render Blade templates from a string
 
@@ -10,7 +12,7 @@ This package generates and returns a compiled view from a provided string
 
 Require this package in your composer.json and run composer update (or run `composer require wcadena/string-blade-compiler:1.*` directly):
 
-    "wcadena/string-blade-compiler": "1.*"
+    "wcadena/laravel-string-blade-compiler": "1.*"
 
 After updating composer, add the ServiceProvider to the providers array in app/config/app.php
 

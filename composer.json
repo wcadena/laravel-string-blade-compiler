@@ -1,33 +1,14 @@
 {
-    "name": "wcadena/string-blade-compiler",
+    "name": "wcadena/laravel-string-blade-compiler",
     "description": "Render Blade templates from a string",
-    "keywords": ["laravel", "blade", "compiler", "eloquent", "model"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Bilal",
-            "email": "bilal@phalcosoft.com",
-            "homepage": "https://phalcosoft.com"
-        },
-        {
-            "name": "Digivo",
-            "email": "hello@digivo.co.uk"
-        },
-        {
-            "name": "Flyn San",
-            "email": "flynsarmy@gmail.com"
-        },
-        {
-            "name": "Ebrahim Radi",
-            "email": "ebrahim.radi@gmail.com",
-            "homepage": "http://me2bits.com"
-        },
-        {
             "name": "Wagner Cadena",
-            "email": "wcadena@outlook.com",
-            "homepage": "http://ecuatask.com"
+            "email": "wcadena@outlook.com"
         }
     ],
+    "minimum-stability": "dev",
     "require": {
         "php": ">=7"
     },
@@ -40,7 +21,10 @@
         "laravel": {
             "providers": [
                 "Wcadena\\StringBladeCompiler\\StringBladeCompilerServiceProvider"
-            ]
+            ],
+            "aliases": {
+                "StringView": "Wcadena\\StringBladeCompiler\\Facades\\StringView"
+            }
         }
     }
 }
