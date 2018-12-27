@@ -4,8 +4,27 @@
     "license": "MIT",
     "authors": [
         {
+            "name": "Bilal",
+            "email": "bilal@phalcosoft.com",
+            "homepage": "https://phalcosoft.com"
+        },
+        {
+            "name": "Digivo",
+            "email": "hello@digivo.co.uk"
+        },
+        {
+            "name": "Flyn San",
+            "email": "flynsarmy@gmail.com"
+        },
+        {
+            "name": "Ebrahim Radi",
+            "email": "ebrahim.radi@gmail.com",
+            "homepage": "http://me2bits.com"
+        },
+        {
             "name": "Wagner Cadena",
-            "email": "wcadena@outlook.com"
+            "email": "wcadena@outlook.com",
+            "homepage": "http://ecuatask.com"
         }
     ],
     "require": {
