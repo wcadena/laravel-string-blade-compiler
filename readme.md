@@ -1,4 +1,4 @@
-## String Blade Compiler (Laravel 5.7)
+## String Blade Compiler (Laravel 5.8)
 
 Originally forked from [Flynsarmy/laravel-db-blade-compiler](https://github.com/Flynsarmy/laravel-db-blade-compiler)
 y 

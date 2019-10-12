@@ -97,7 +97,7 @@ class StringView extends \Illuminate\View\View implements ArrayAccess, Renderabl
      *
      * @return array
      */
-    protected function gatherData()
+    public function gatherData()
     {
         $data = array_merge(View::getShared(), $this->data);
 
