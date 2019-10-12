@@ -6,7 +6,7 @@ class StringView extends StringViewMaster
 {
 
     /** @var \Illuminate\Config\Repository */
-    protected $config;
+    protected static $config;
 
     public function __construct($config)
     {
