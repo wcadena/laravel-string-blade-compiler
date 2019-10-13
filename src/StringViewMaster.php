@@ -31,7 +31,7 @@ class StringViewMaster extends \Illuminate\View\View implements ArrayAccess, Ren
      * @param  array   $mergeData
      * @return \Illuminate\View\View
      */
-    public function make($view, $data = array(), $mergeData = array())
+    public function makeMaster($view, $data = array(), $mergeData = array())
     {
         $this->path = $view;
         $this->data = array_merge($mergeData, $this->parseData($data));

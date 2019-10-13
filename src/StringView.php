@@ -23,9 +23,8 @@ class StringView extends StringViewMaster
      */
     public static function make($view, $data = array(), $mergeData = array())
     {
-        self::$path = $view;
-        self::$data = array_merge($mergeData, self::parseData($data));
+        $stringViewMaster = new StringViewMaster(self::$config);
 
-        return self;
+        return $stringViewMaster->makeMaster($view, $data, $mergeData);
     }
 }
